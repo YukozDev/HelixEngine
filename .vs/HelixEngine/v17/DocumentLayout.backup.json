@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Khalil\\Desktop\\HelixEngine\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{750FE183-CE1E-4682-BCE1-C6B7678412E4}|HelixGraphics\\HelixGraphics.vcxproj|C:\\Users\\Khalil\\Desktop\\HelixEngine\\HelixGraphics\\src\\HelixGraphics\\GraphicsApplication.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{750FE183-CE1E-4682-BCE1-C6B7678412E4}|HelixGraphics\\HelixGraphics.vcxproj|solutionrelative:HelixGraphics\\src\\HelixGraphics\\GraphicsApplication.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD7E071F-DDD3-45B3-8AA1-DCA200DA5E21}|HelixCore\\HelixCore.vcxproj|C:\\Users\\Khalil\\Desktop\\HelixEngine\\HelixCore\\src\\HelixCore\\Assert\\Assert.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AD7E071F-DDD3-45B3-8AA1-DCA200DA5E21}|HelixCore\\HelixCore.vcxproj|solutionrelative:HelixCore\\src\\HelixCore\\Assert\\Assert.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD7E071F-DDD3-45B3-8AA1-DCA200DA5E21}|HelixCore\\HelixCore.vcxproj|C:\\Users\\Khalil\\Desktop\\HelixEngine\\HelixCore\\src\\HelixCore\\Assert\\Assert.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AD7E071F-DDD3-45B3-8AA1-DCA200DA5E21}|HelixCore\\HelixCore.vcxproj|solutionrelative:HelixCore\\src\\HelixCore\\Assert\\Assert.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD7E071F-DDD3-45B3-8AA1-DCA200DA5E21}|HelixCore\\HelixCore.vcxproj|C:\\Users\\Khalil\\Desktop\\HelixEngine\\HelixCore\\src\\HelixCore\\Build\\Build.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AD7E071F-DDD3-45B3-8AA1-DCA200DA5E21}|HelixCore\\HelixCore.vcxproj|solutionrelative:HelixCore\\src\\HelixCore\\Build\\Build.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Assert.cpp",
+              "DocumentMoniker": "C:\\Users\\Khalil\\Desktop\\HelixEngine\\helixcore\\src\\HelixCore\\Assert\\Assert.cpp",
+              "RelativeDocumentMoniker": "helixcore\\src\\HelixCore\\Assert\\Assert.cpp",
+              "ToolTip": "C:\\Users\\Khalil\\Desktop\\HelixEngine\\helixcore\\src\\HelixCore\\Assert\\Assert.cpp",
+              "RelativeToolTip": "helixcore\\src\\HelixCore\\Assert\\Assert.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-16T06:12:22.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Build.h",
+              "DocumentMoniker": "C:\\Users\\Khalil\\Desktop\\HelixEngine\\helixcore\\src\\HelixCore\\Build\\Build.h",
+              "RelativeDocumentMoniker": "helixcore\\src\\HelixCore\\Build\\Build.h",
+              "ToolTip": "C:\\Users\\Khalil\\Desktop\\HelixEngine\\helixcore\\src\\HelixCore\\Build\\Build.h",
+              "RelativeToolTip": "helixcore\\src\\HelixCore\\Build\\Build.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-16T06:12:16.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Assert.h",
+              "DocumentMoniker": "C:\\Users\\Khalil\\Desktop\\HelixEngine\\helixcore\\src\\HelixCore\\Assert\\Assert.h",
+              "RelativeDocumentMoniker": "helixcore\\src\\HelixCore\\Assert\\Assert.h",
+              "ToolTip": "C:\\Users\\Khalil\\Desktop\\HelixEngine\\helixcore\\src\\HelixCore\\Assert\\Assert.h",
+              "RelativeToolTip": "helixcore\\src\\HelixCore\\Assert\\Assert.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-16T05:49:40.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GraphicsApplication.cpp",
+              "DocumentMoniker": "C:\\Users\\Khalil\\Desktop\\HelixEngine\\helixgraphics\\src\\HelixGraphics\\GraphicsApplication.cpp",
+              "RelativeDocumentMoniker": "helixgraphics\\src\\HelixGraphics\\GraphicsApplication.cpp",
+              "ToolTip": "C:\\Users\\Khalil\\Desktop\\HelixEngine\\helixgraphics\\src\\HelixGraphics\\GraphicsApplication.cpp",
+              "RelativeToolTip": "helixgraphics\\src\\HelixGraphics\\GraphicsApplication.cpp",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-16T05:47:18.405Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
