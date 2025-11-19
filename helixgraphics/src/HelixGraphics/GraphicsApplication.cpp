@@ -76,8 +76,10 @@ hxInt32 main(hxInt32 argc, hxChar** argv)
 
 	const char* vertexShaderSource = R"(
 		#version 460 core
+
 		layout(location = 0) in vec2 position;
 		layout(location = 1) in vec3 color;
+
 		out vec3 fragColor;
 		void main()
 		{
@@ -88,8 +90,10 @@ hxInt32 main(hxInt32 argc, hxChar** argv)
 
 	const char* fragmentShaderSource = R"(
 		#version 460 core
+
 		in vec3 fragColor;
 		out vec4 finalColor;
+   
 		void main()
 		{
 			finalColor = vec4(fragColor, 1.0);
