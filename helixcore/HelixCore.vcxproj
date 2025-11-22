@@ -21,7 +21,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v145</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -81,10 +81,12 @@
     <ClInclude Include="src\HelixCore\Build\Build.h" />
     <ClInclude Include="src\HelixCore\Assert\Assert.h" />
     <ClInclude Include="src\HelixCore\CoreEngine.h" />
+    <ClInclude Include="src\HelixCore\Logger\Logger.h" />
     <ClInclude Include="src\HelixCore\Type\Type.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\HelixCore\Assert\Assert.cpp" />
+    <ClCompile Include="src\HelixCore\Logger\Logger.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
