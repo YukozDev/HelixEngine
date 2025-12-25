@@ -5,7 +5,7 @@
 #include <HelixCore/CoreEngine.h>
 #include <HelixCore/File/FileBinStream.h>
 #include <HelixCore/Logger/LogCategory.h>
-#include <HelixCore/Logger/LogHandler.h>
+#include <HelixCore/Logger/Logger.h>
 #include <malloc.h>
 #include <iostream>
 
@@ -35,12 +35,7 @@ hxInt32 main(hxInt32 argc, hxChar** argv)
 
 	GLFWwindow* window = glfwCreateWindow(800, 800, "Helix Graphics", nullptr, nullptr);
 
-	#define LogGraphic LogCategory("GraphicsLog")
-
-	hxLogDebug(LogGraphic, "Test");
-
-	//LogCategory cat = LogCategory("GraphicLog");
-
+	//hxLogDebug(LogGraphics, "Test");
 
 	if (window == nullptr)
 	{

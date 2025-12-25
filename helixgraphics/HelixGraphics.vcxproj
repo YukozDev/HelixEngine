@@ -85,6 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\HelixGraphics\GraphicsApplication.h" />
+    <ClInclude Include="src\HelixGraphics\Logger\GraphicsLog.h" />
     <ClInclude Include="src\HelixGraphics\Shader\ElementBufferObject.h" />
     <ClInclude Include="src\HelixGraphics\Shader\VertexArrayObject.h" />
     <ClInclude Include="src\HelixGraphics\Shader\VertexBufferObject.h" />
@@ -92,6 +93,7 @@
   <ItemGroup>
     <ClCompile Include="src\HelixGraphics\glad.c" />
     <ClCompile Include="src\HelixGraphics\GraphicsApplication.cpp" />
+    <ClCompile Include="src\HelixGraphics\Logger\GraphicsLog.cpp" />
     <ClCompile Include="src\HelixGraphics\Shader\ElementBufferObject.cpp" />
     <ClCompile Include="src\HelixGraphics\Shader\IShader.h" />
     <ClCompile Include="src\HelixGraphics\Shader\VertexArrayObject.cpp" />

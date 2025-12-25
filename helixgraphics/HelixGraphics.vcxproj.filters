@@ -27,6 +27,9 @@
     <ClInclude Include="src\HelixGraphics\Shader\ElementBufferObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\HelixGraphics\Logger\GraphicsLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\HelixGraphics\GraphicsApplication.cpp">
@@ -45,6 +48,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\HelixGraphics\Shader\IShader.h">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HelixGraphics\Logger\GraphicsLog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

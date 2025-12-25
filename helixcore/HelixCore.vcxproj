@@ -86,12 +86,12 @@
     <ClInclude Include="src\HelixCore\Logger\LogCategory.h" />
     <ClInclude Include="src\HelixCore\Logger\Logger.h" />
     <ClInclude Include="src\HelixCore\Logger\LogHandler.h" />
-    <ClInclude Include="src\HelixCore\Type\Type.h" />
+    <ClInclude Include="src\HelixCore\Types\Type.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\HelixCore\Logger\LogCategory.cpp" />
     <ClCompile Include="src\HelixCore\Assert\Assert.cpp" />
     <ClCompile Include="src\HelixCore\File\FileBinStream.cpp" />
+    <ClCompile Include="src\HelixCore\Logger\LogCategory.cpp" />
     <ClCompile Include="src\HelixCore\Logger\Logger.cpp" />
     <ClCompile Include="src\HelixCore\Logger\LogHandler.cpp" />
   </ItemGroup>

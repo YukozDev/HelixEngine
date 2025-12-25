@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\HelixCore\Type\Type.h">
+    <ClInclude Include="src\HelixCore\Types\Type.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\HelixCore\Assert\Assert.h">
