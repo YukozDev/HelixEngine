@@ -4,8 +4,7 @@
 #include <GLFW/glfw3.h>
 #include <HelixCore/CoreEngine.h>
 #include <HelixCore/File/FileBinStream.h>
-#include <HelixCore/Logger/LogCategory.h>
-#include <HelixCore/Logger/Logger.h>
+//#include <HelixCore/Logger/LogCategory.h>
 #include <malloc.h>
 #include <iostream>
 

@@ -27,16 +27,19 @@
     <ClInclude Include="src\HelixCore\CoreEngine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\HelixCore\Logger\Logger.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\HelixCore\File\FileBinStream.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\HelixCore\File\FileAccess.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\HelixCore\Logger\LogHandler.h">
+    <ClInclude Include="src\HelixCore\Logger\Logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HelixCore\Logger\LogMessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HelixCore\Logger\ILogOutput.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\HelixCore\Logger\LogCategory.h">
@@ -47,16 +50,10 @@
     <ClCompile Include="src\HelixCore\Assert\Assert.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\HelixCore\Logger\Logger.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\HelixCore\File\FileBinStream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\HelixCore\Logger\LogHandler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\HelixCore\Logger\LogCategory.cpp">
+    <ClCompile Include="src\HelixCore\Logger\Logger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,31 +1,48 @@
 #pragma once
-#include <HelixCore/Build/Build.h>
-#include <HelixCore/Logger/LogCategory.h>
-#include <HelixCore/Logger/LogHandler.h>
+#include <condition_variable>
+#include <queue>
+#include <mutex>
+#include <thread>
+#include <vector>
+#include <HelixCore/Logger/ILogOutput.h>
+#include <HelixCore/Logger/LogMessage.h>
+#include <HelixCore/Types/Type.h>
 
-#ifdef HX_DEBUG
-	#define hxLogInfo(category, message) Logger(category, message, LogType::Info)
-	#define hxLogDebug(category, message) Logger(category, message, LogType::Debug)
-	#define hxLogWarning(category, message) Logger(category, message, LogType::Warning)
-	#define hxLogError(category, message) Logger(category, message, LogType::Error)
-	#define hxLogCritical(category, message) Logger(category, message, LogType::Critical)
-#else
-	#define hxLogInfo(category, message) ((void)0)
-	#define hxLogDebug(category, message) ((void)0)
-	#define hxLogWarning(category, message) ((void)0)
-	#define hxLogError(category, message) ((void)0)
-	#define hxLogCritical(category, message) ((void)0)
-#endif // HX_DEBUG
 
-class Logger
+class Logger final
 {
-public:
-	Logger(LogHandler& handler);
-	~Logger();
+	public:
+		// Singleton should not be cloneable
+		Logger(const Logger& other) = delete;
 
-	void FormatMessage(LogCategory& category, const char* message, LogType type);
+		// Singleton should not be assignable
+		Logger& operator=(const Logger&) = delete;
 
-private:
-	LogHandler& m_Handler;
+		static Logger& GetInstance();
+
+		void Initialize();
+		void Shutdown();
+
+		void Dispatch();
+		void Enqueue(LogMessage& message);
+
+		void RegisterLogOutput(ILogOutput* output);
+		void ClearRegisterLogOutput();
+
+
+	private:
+		Logger() = default;
+		~Logger();
+
+		static Logger* m_Instance;
+
+		std::mutex m_LoggerMutex;
+		std::thread m_LogThread;
+
+		std::vector<ILogOutput*> m_LogOutputs;
+		std::queue<LogMessage> m_MessageQueue;
+		std::condition_variable m_ConditionVariable;
+
+		hxBool m_Running = false;
 };
 

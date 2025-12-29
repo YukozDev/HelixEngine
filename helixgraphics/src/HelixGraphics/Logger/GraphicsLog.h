@@ -1,6 +1,6 @@
 #pragma once
-#include <HelixCore/Logger/LogCategory.h>
+//#include <HelixCore/Logger/LogCategory.h>
 
 // Define the log category for graphics-related logging
-DECLARE_LOG_CATEGORY(LogGraphics);
+//DECLARE_LOG_CATEGORY(LogGraphics);
 
