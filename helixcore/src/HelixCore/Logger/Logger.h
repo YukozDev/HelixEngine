@@ -8,7 +8,6 @@
 #include <HelixCore/Logger/LogMessage.h>
 #include <HelixCore/Types/Type.h>
 
-
 class Logger final
 {
 	public:
@@ -23,16 +22,17 @@ class Logger final
 		void Initialize();
 		void Shutdown();
 
-		void Dispatch();
 		void Enqueue(LogMessage& message);
 
 		void RegisterLogOutput(ILogOutput* output);
 		void ClearRegisterLogOutput();
 
-
 	private:
 		Logger() = default;
 		~Logger();
+
+		void Dispatch();
+		void Flush();
 
 		static Logger* m_Instance;
 

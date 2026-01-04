@@ -3,5 +3,13 @@
 
 class GraphicsApplication
 {
+	public:
+		void Run();
+		void Shutdown();
+
+		void Draw();
+
+	private:
+		GraphicsLog* m_GraphicsLog = nullptr;
 };
 

@@ -1,5 +1,4 @@
-#include "Logger.h"
-
+#include <HelixCore/Logger/Logger.h>
 
 // Static
 Logger* Logger::m_Instance = nullptr;
@@ -24,12 +23,12 @@ Logger::~Logger()
 
 void Logger::Initialize()
 {
-	std::lock_guard<std::mutex> lock(m_LoggerMutex);
-
 	if(m_Running)
 	{
 		return;
 	}	
+
+	std::lock_guard<std::mutex> lock(m_LoggerMutex);
 
 	m_LogThread = std::thread([this]() { Dispatch(); });
 
@@ -45,6 +44,7 @@ void Logger::Dispatch()
 		{
 			std::unique_lock<std::mutex> lock(m_LoggerMutex);
 
+			// Sleep as long as there is no message in the queue or the logger is running
 			m_ConditionVariable.wait(lock, [this]() {
 				return !m_MessageQueue.empty() || !m_Running;
 			});
@@ -73,7 +73,9 @@ void Logger::Dispatch()
 			{
 				return;
 			}
-
+			
+			// The write operation can be slow, so we do not want to hold the lock during this operation
+			// WARN : The write operation does not have an internal lock
 			output->Write(message);
 		}
 	}
@@ -92,8 +94,27 @@ void Logger::Enqueue(LogMessage& message)
 		m_MessageQueue.push(message);
 	}
 
-	// wake up the thread for process the message
-	m_ConditionVariable.notify_one();
+	// Wake up the logging thread that a new message is available
+	m_ConditionVariable.notify_all();
+}
+
+void Logger::Flush()
+{
+	std::lock_guard<std::mutex> lock(m_LoggerMutex);
+
+	if (m_LogOutputs.empty())
+	{
+		return;
+	}
+
+	for (ILogOutput* output : m_LogOutputs)
+	{
+		if (output == nullptr)
+		{
+			return;
+		}
+		output->Flush();
+	}
 }
 
 void Logger::RegisterLogOutput(ILogOutput* output)
@@ -125,7 +146,26 @@ void Logger::ClearRegisterLogOutput()
 
 void Logger::Shutdown()
 {
-	delete m_Instance;
+	std::lock_guard<std::mutex> lock(m_LoggerMutex);
 
+	if (!m_Running)
+	{
+		return;
+	}
+
+	m_Running = false;
+	m_ConditionVariable.notify_all();
+
+	if(m_LogThread.joinable())
+	{
+		// Wait for the logging thread to finish
+		m_LogThread.join();
+	}
+
+	// Flush all log outputs
+	Flush();
+
+	// Logger Singleton
+	delete m_Instance;
 	m_Instance = nullptr;
 }

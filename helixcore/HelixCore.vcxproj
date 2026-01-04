@@ -78,6 +78,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\HelixCore\Logger\Outputs\ConsoleLogOutput.h" />
     <ClInclude Include="src\HelixCore\Build\Build.h" />
     <ClInclude Include="src\HelixCore\Assert\Assert.h" />
     <ClInclude Include="src\HelixCore\CoreEngine.h" />
@@ -90,9 +91,11 @@
     <ClInclude Include="src\HelixCore\Types\Type.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\HelixCore\Logger\Outputs\ConsoleLogOutput.cpp" />
     <ClCompile Include="src\HelixCore\Assert\Assert.cpp" />
     <ClCompile Include="src\HelixCore\File\FileBinStream.cpp" />
     <ClCompile Include="src\HelixCore\Logger\Logger.cpp" />
+    <ClCompile Include="src\HelixCore\Logger\LogMessage.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
